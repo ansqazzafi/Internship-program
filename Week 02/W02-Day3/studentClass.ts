@@ -1,24 +1,24 @@
-import { Student } from "./interface";
+import { StudentRecord } from "./interface";
 
 
 class StudentsRecord {
-    private studentsRecord: Student[] = []
+    private studentsRecord: StudentRecord[] = []
     constructor() {
         console.log("Object has been created");
     }
 
-    public addStudent(studentData: Student): Student {
+    public addStudent(studentData: StudentRecord): StudentRecord {
         this.studentsRecord.push(studentData)
         return studentData
     }
 
-    public getAllStudentsRecord(): Student[] {
+    public getAllStudentsRecord(): StudentRecord[] {
         return this.studentsRecord
     }
 }
 
 const newStudentRecord = new StudentsRecord()
-const data:Student={
+const data:StudentRecord={
     name:"Ans",
     age:34,
     scores:[34,45,23]
