@@ -14,7 +14,7 @@ interface StudentDetails {
 const FilteredStudents:StudentDetails[]=[]
 //generic function
 function filterStudent<T extends StudentDetails>(students:T[] , passingMarks:number):T[]{
-    return students.filter(student => student.marks > passingMarks) as T[]
+    return students.filter(student => student.marks > passingMarks)
 }
 const students:StudentDetails[] =[
     { name: "Ali", marks: 85, gradeLevel: gradeLevel.freshman },

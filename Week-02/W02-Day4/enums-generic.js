@@ -7,6 +7,7 @@ var gradeLevel;
     gradeLevel["senior"] = "senior";
 })(gradeLevel || (gradeLevel = {}));
 var FilteredStudents = [];
+//generic function
 function filterStudent(students, passingMarks) {
     return students.filter(function (student) { return student.marks > passingMarks; });
 }
